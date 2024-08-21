@@ -1,22 +1,33 @@
 body {
     margin: 0;
     padding: 0;
+    background-color: #000;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #000;
+    overflow: hidden;
     color: #fff;
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
 }
 
-#game-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#game-wrapper {
+    position: relative;
 }
 
-#gameCanvas {
+#score-container {
+    position: absolute;
+    top: 10px;
+    right: -200px;
+    width: 180px;
+    text-align: center;
+}
+
+#score-container h1 {
+    font-size: 24px;
+    margin: 0;
+    padding: 10px;
     background-color: #111;
-    border: 2px solid #fff;
+    border: 2px solid #333;
+    border-radius: 10px;
 }
